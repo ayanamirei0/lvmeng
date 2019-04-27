@@ -128,7 +128,7 @@ export default {
                             console.log(res.result.listData);
                             console.log(typeof(cityArr));
                             
-                            cityArr.concat(res.result.listData);
+                            cityArr.push(res.result.listData[0]);
                             console.log(cityArr,'拼接以后的城市数据');
                             //this.showDetailList = res.result.listData;
                             this.total = res.result.listData.length;
